@@ -1,0 +1,455 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('fonts/MuseoSansCyrl-500.woff') format('woff'),
+         url('fonts/MuseoSansCyrl-700.woff') format('woff'),
+         url('fonts/MuseoSansCyrl-900.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h2 {
+    font-size: 40px;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+}
+
+.support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+    padding: 40px;
+    text-align: center;
+    color: white;
+}
+
+.support__banner {
+    width: 1200px;
+    height: 306px;
+    background-color: #93BBEA;
+    background-image: url('images/telegram.svg'), url('images/hand.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 37px, 100% 80px;
+    border-radius: 40px;
+    margin-bottom: 82px;
+    padding: 40px;
+}
+
+.support__banner-title {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 0.034em;
+    line-height: 72px;
+    margin-bottom: 4px;
+}
+
+.support__description {
+    width: 535px;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 0 auto 40px;
+    line-height: 23.8px;
+}
+
+.support__buttons {
+    justify-content: center;
+    display: flex;
+}
+
+.support__button {
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    width: 160px;
+    height: 48px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.support__button:last-child {
+    margin-right: 0;
+}
+
+.support__button img {
+    margin-right: 9px;
+}
+
+.support__social-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    width: 996px;
+    height: 166px;
+    border-radius: 40px;
+    box-shadow: 0px 20px 70px 10px rgba(0, 0, 0, 0.04);
+    margin-bottom: 80px;
+    color: black;
+}
+
+.support__social-links-header {
+    text-align: left;
+}
+
+.support__support__social-links-description {
+    margin-bottom: 16px;
+    font-size: 15px;
+    letter-spacing: 0.01em;
+}
+
+.support__social-links-list {
+    display: flex;
+    width: 406px;
+}
+
+.support__social-link {
+    width: 56px;
+    height: 56px;
+    background-color: rgba(249, 249, 249, 1);
+    margin-right: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 13px;
+}
+
+.support__social-link:last-child {
+    margin-right: 0;
+}
+
+.support__social-link img {
+    vertical-align: middle;
+}
+
+.support__faq {
+    color: black;
+    margin-bottom: 80px;
+}
+
+.support__faq-title {
+    margin-bottom: 32px;
+}
+
+.support__faq-list-cnt {
+    position: relative;
+}
+
+.support__faq-list {
+    display: flex;
+}
+
+.support__faq-item {
+    display: flex;
+    flex-shrink: 0;
+    width: 282px;
+    height: 160px;
+    margin-right: 24px;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.support__faq-item:last-child {
+    margin-right: 0;
+}
+
+.support__faq-item-text-content {
+    padding: 16px;
+    padding-right: 12px;
+}
+
+.support__faq-item-title {
+    margin-bottom: 8px;
+    max-width: 240px;
+}
+
+.support__faq-item-description {
+    color: rgba(148, 148, 148, 1);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 44px;
+    height: 44px;
+    background-image: url('images/icons/arrow-black.svg');
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 10;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.04);
+}
+
+.next-button {
+    left: calc(100% - 22px);
+    transform: translate(-50%, -50%);
+}
+
+.support__references {
+    margin-bottom: 80px;
+    color: black;
+    position: relative;
+}
+
+.support__references-title {
+    line-height: 48px;
+    margin-bottom: 32px;
+}
+
+.support__references-item {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.04);
+    width: 996px;
+    border-radius: 16px;
+    min-height: 64px;
+    margin-bottom: 12px;
+    padding: 20px 24px;
+    text-align: left;
+}
+
+.support__references-item:last-child {
+    margin-bottom: 0;
+}
+
+.support__references-item-title {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.support__references-item-description {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: rgba(148, 148, 148, 1);
+    max-width: 440px;
+}
+
+/* Стили для страницы статьи */
+.delivery {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.delivery__location {
+    display: flex;
+    flex-direction: column;
+    width: 690px;
+    margin: 22px 40px;
+    margin-bottom: 80px;
+}
+
+.delivery__title-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.delivery__title {
+    margin-right: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.8px;
+    letter-spacing: 0.026em;
+}
+
+.delivery__content {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.contact-us {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15.6px;
+}
+
+.contact-us {
+    margin-top: 40px;
+    margin-bottom: 16px;
+    letter-spacing: 0.01em;
+}
+
+.delivery__online-chat-buttons-container {
+    display: flex;
+}
+
+.delivery__online-chat-button,
+.delivery__call-us-button,
+.delivery__email-us-button {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    margin-right: 8px;
+    border-radius: 12px;
+}
+
+.delivery__online-chat-button {
+    background-color: rgba(54, 186, 95, 1);
+    width: 224px;
+    height: 48px;
+    color: white;
+    padding: 15px 56px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.delivery__online-chat-button img {
+    margin-right: 8px;
+}
+
+.delivery__call-us-button,
+.delivery__email-us-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    background-color: rgba(249, 249, 249, 1);
+}
+
+/* Медиа-запросы для iPhone 10 Pro Max */
+@media only screen and (max-width: 414px) {
+    h2 {
+        font-size: 25px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .support {
+        width: 100%;
+        padding: 20px;
+    }
+  
+    .support__banner {
+        width: 100%;
+        height: auto;
+        background-image: none;
+        margin-bottom: 25px;
+    }
+  
+    .support__banner-title {
+        font-size: 30px;
+        line-height: 50px;
+    }
+  
+    .support__description {
+        width: 100%;
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .support__button {
+        width: 100px;
+        height: 30px;
+        border-radius: 8px;
+        font-size: 8px;
+        line-height: 8px;
+        font-weight: 600;
+    }
+
+    .support__button img {
+        margin-right: 2px;
+    }
+
+    .support__social-links {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        flex-direction: column;
+        margin-bottom: 25px;
+    }
+
+    .support__social-links-list {
+        width: 90%;
+        justify-content: center;
+    }
+
+    .support__social-link {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        border-radius: 8px;
+    }
+
+    .support__social-link img {
+        width: 70%;
+    }
+
+    .support__social-links-header {
+        text-align: left;
+    }
+
+    .support__support__social-links-description {
+        display: none;
+    }
+
+    .support__faq {
+        margin-bottom: 25px;
+    }
+
+    .support__social-links-title {
+        margin-bottom: 10px;
+    }
+
+    .support__faq-item {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .support__faq-item:last-child {
+        margin-bottom: 0px;
+    }
+
+    .support__faq-list {
+        flex-direction: column;
+    }
+
+    .next-button {
+        position: absolute;
+        top: calc(100% - 22px);
+        transform: rotate(90deg);
+        left: calc(50% - 22px);
+    }
+
+    .support__references {
+        margin-bottom: 25px;
+    }
+
+    .support__references-item {
+        max-width: 374px;
+    }
+
+  }
